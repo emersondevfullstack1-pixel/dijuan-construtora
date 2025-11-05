@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MessageCircle as Whatsapp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Item } from "@radix-ui/react-accordion";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +34,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg py-3" : "bg-transparent py-5"
+        isScrolled || isMobileMenuOpen
+          ? "bg-white shadow-lg py-3"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="container">
@@ -72,7 +75,7 @@ export default function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`font-medium transition-colors hover:text-white ${
+                className={`font-medium transition-colors ${
                   isScrolled ? "text-foreground" : "text-white"
                 } ${item.id === "contato" && isScrolled ? "text-black" : ""}`}
               >
@@ -112,7 +115,7 @@ export default function Header() {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`lg:hidden p-2 transition-colors ${
-                isScrolled ? "text-foreground" : "text-white"
+                isScrolled || isMobileMenuOpen ? "text-black" : "text-white"
               }`}
             >
               {isMobileMenuOpen ? (
@@ -126,27 +129,16 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 bg-white rounded-bl-lg shadow-lg">
-            <nav className="flex flex-col space-y-4">
-              {navItems.map(item => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="px-2 py-2 text-left font-bold text-foreground hover:bg-red-700 hover:text-white transition-colors"
-                >
-                  {item.label}
-                </button>
-              ))}
-              <div className="px-4 py-2 border-t border-border">
-                <a
-                  href="tel:+558398103-3696"
-                  className="flex items-center space-x-2 text-sm text-foreground hover:text-primary"
-                >
-                  <Whatsapp className="w-4 h-4" />
-                  <span>(83) 98103-3696</span>
-                </a>
-              </div>
-            </nav>
+          <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
+            {navItems.map(Item => (
+              <button
+                key={Item.id}
+                onClick={() => scrollToSection(Item.id)}
+                className="block w-full text-left text-foreground/80 hover:text-red-700 font-medium transition-colors py-2"
+              >
+                {Item.label}
+              </button>
+            ))}
           </div>
         )}
       </div>
