@@ -15,8 +15,8 @@
   ],
   "routes": [
     {
-      "src": "/[^*]+",
-      "dest": "/index.html"
+      "src": "/api/(.*)",
+      "dest": "api/index.ts"
     },
     {
       "src": "/(.*)",
