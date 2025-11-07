@@ -136,7 +136,7 @@ export default function Contact() {
                     htmlFor="name"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Nome Completo *
+                    Nome Completo
                   </label>
                   <Input
                     id="name"
@@ -154,7 +154,7 @@ export default function Contact() {
                     htmlFor="email"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    E-mail *
+                    E-mail
                   </label>
                   <Input
                     id="email"
@@ -189,7 +189,7 @@ export default function Contact() {
                     htmlFor="message"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Mensagem *
+                    Mensagem
                   </label>
                   <Textarea
                     id="message"
@@ -202,7 +202,11 @@ export default function Contact() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full bg-primary text-black hover:bg-black hover:text-white"
+                >
                   <Send className="w-5 h-5 mr-2" />
                   Enviar Mensagem
                 </Button>
@@ -222,10 +226,10 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">
+                    <h3 className=" text-black text-2xl font-bold mb-3">
                       Atendimento Rápido via WhatsApp
                     </h3>
-                    <p className="text-white/90 leading-relaxed">
+                    <p className="text-black leading-relaxed">
                       Prefere falar diretamente conosco? Entre em contato pelo
                       WhatsApp e receba atendimento personalizado em tempo real.
                     </p>
@@ -235,9 +239,9 @@ export default function Contact() {
                     href="https://wa.me/5583981033696"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors w-full"
+                    className="group inline-flex items-center justify-center px-8 py-4 text-black font-semibold rounded-lg hover:bg-black hover:text-white transition-colors w-full"
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <MessageCircle className="w-5 h-5 mr-2 transition-colors text-black group-hover:text-white" />
                     Falar via WhatsApp
                   </a>
                 </div>

@@ -90,11 +90,22 @@ export default function Footer() {
                   <span className="text-primary font-bold text-xl"></span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl">DIJUAN</h3>
-                  <p className="text-sm text-white/80">Construtora</p>
+                  <div className="flex items-center space-x-2">
+                    <img
+                      src="../public/favicon.ico"
+                      alt="Logo da DIJUAN Construtora"
+                      className="w-8 h-8"
+                    />
+
+                    <h3 className="font-bold text-xl text-black">DIJUAN</h3>
+                  </div>
+
+                  <p className="text-black text-xs transition-colors pl-12">
+                    Construtora
+                  </p>
                 </div>
               </div>
-              <p className="text-white/80 text-sm leading-relaxed">
+              <p className="text-black text-sm leading-relaxed">
                 Construindo sonhos e transformando vidas há 16 anos. Parte do
                 Grupo Dijuan, com 40 anos de tradição e excelência.
               </p>
@@ -102,12 +113,14 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-bold text-lg mb-4">Links Rápidos</h4>
+              <h4 className="font-bold text-lg mb-4 text-black">
+                Links Rápidos
+              </h4>
               <ul className="space-y-2">
                 <li>
                   <button
                     onClick={() => scrollToSection("inicio")}
-                    className="text-white/80 hover:text-white transition-colors text-sm"
+                    className="text-black  transition-colors text-sm"
                   >
                     Início
                   </button>
@@ -115,7 +128,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("sobre")}
-                    className="text-white/80 hover:text-white transition-colors text-sm"
+                    className="text-black transition-colors text-sm"
                   >
                     Nossa Empresa
                   </button>
@@ -123,7 +136,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("empreendimentos")}
-                    className="text-white/80 hover:text-white transition-colors text-sm"
+                    className="text-black transition-colors text-sm"
                   >
                     Empreendimentos
                   </button>
@@ -131,7 +144,7 @@ export default function Footer() {
                 <li>
                   <button
                     onClick={() => scrollToSection("contato")}
-                    className="text-white/80 hover:text-white transition-colors text-sm"
+                    className="text-black transition-colors text-sm"
                   >
                     Fale Conosco
                   </button>
@@ -141,37 +154,37 @@ export default function Footer() {
 
             {/* Contact */}
             <div>
-              <h4 className="font-bold text-lg mb-4">Contato</h4>
+              <h4 className="font-bold text-lg mb-4 text-black">Contato</h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="tel:+558398103-3696"
-                    className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors text-sm"
+                    className="flex items-center space-x-2 text-black transition-colors text-sm"
                   >
-                    <Phone className="w-4 h-4" />
+                    <Phone className="w-4 h-4 text-black" />
                     <span>(83) 98103-3696</span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="tel:+558399972-0292"
-                    className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors text-sm"
+                    className="flex items-center space-x-2 text-black transition-colors text-sm"
                   >
-                    <Phone className="w-4 h-4" />
+                    <Phone className="w-4 h-4 text-black" />
                     <span>(83) 99972-0292</span>
                   </a>
                 </li>
                 <li>
                   <a
                     href="mailto:dijuanconstrutora@gmail.com"
-                    className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors text-sm"
+                    className="flex items-center space-x-2 text-black transition-colors text-sm"
                   >
                     <Mail className="w-4 h-4" />
                     <span>dijuanconstrutora@gmail.com</span>
                   </a>
                 </li>
                 <li>
-                  <div className="flex items-start space-x-2 text-white/80 text-sm">
+                  <div className="flex items-start space-x-2 text-black text-sm">
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
                     <span>Campina Grande, Paraíba</span>
                   </div>
@@ -181,8 +194,10 @@ export default function Footer() {
 
             {/* Social Media */}
             <div>
-              <h4 className="font-bold text-lg mb-4">Redes Sociais</h4>
-              <p className="text-white/80 text-sm mb-4">
+              <h4 className=" text-black font-bold text-lg mb-4">
+                Redes Sociais
+              </h4>
+              <p className="text-black text-sm mb-4">
                 Acompanhe nossas novidades e empreendimentos
               </p>
               <div className="flex space-x-3">
@@ -190,7 +205,7 @@ export default function Footer() {
                   href="https://www.facebook.com/dijuanconstrutora"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-black hover:bg-black rounded-full flex items-center justify-center transition-colors"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
@@ -199,7 +214,7 @@ export default function Footer() {
                   href="https://www.instagram.com/dijuanconstrutora"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-black hover:bg-black rounded-full flex items-center justify-center transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
@@ -208,7 +223,7 @@ export default function Footer() {
                   href="https://wa.me/5583981033696"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-black hover:bg-black rounded-full flex items-center justify-center transition-colors"
                   aria-label="WhatsApp"
                 >
                   <Phone className="w-5 h-5" />
@@ -218,15 +233,15 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-white/20 pt-8">
+          <div className="border-t border-black pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <p className="text-white/80 text-sm text-center md:text-left">
+              <p className="text-black text-sm text-center md:text-left">
                 © {currentYear} Dijuan Construtora. Todos os direitos
                 reservados.
               </p>
-              <p className="text-white/80 text-sm text-center md:text-right">
+              <p className="text-black text-sm text-center md:text-right">
                 Uma empresa do{" "}
-                <strong className="text-white">Grupo Dijuan</strong>
+                <strong className="text-black">Grupo Dijuan</strong>
               </p>
             </div>
           </div>
