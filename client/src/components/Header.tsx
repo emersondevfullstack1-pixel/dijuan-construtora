@@ -48,7 +48,7 @@ export default function Header() {
               className="flex items-center space-x-2 group"
             >
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <img src="./public/favicon.ico" alt="" className="w-6 h-6" />
+                <img src="../public/favicon.png" alt="" className="w-6 h-6" />
               </div>
               <div className="hidden md:block">
                 <h1
