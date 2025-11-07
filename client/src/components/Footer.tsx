@@ -92,7 +92,7 @@ export default function Footer() {
                 <div>
                   <div className="flex items-center space-x-2">
                     <img
-                      src="../public/favicon.png"
+                      src="/favicon.png"
                       alt="Logo da DIJUAN Construtora"
                       className="w-8 h-8"
                     />
