@@ -92,7 +92,7 @@ export default function Footer() {
                 <div>
                   <div className="flex items-center space-x-2">
                     <img
-                      src="../public/favicon.ico"
+                      src="../public/favicon.png"
                       alt="Logo da DIJUAN Construtora"
                       className="w-8 h-8"
                     />
@@ -240,8 +240,12 @@ export default function Footer() {
                 reservados.
               </p>
               <p className="text-black text-sm text-center md:text-right">
-                Uma empresa do{" "}
-                <strong className="text-black">Grupo Dijuan</strong>
+                <a
+                  href="https://emersonmelhorzin.vercel.app/"
+                  className="text-black font-bold"
+                >
+                  Emerson Silva
+                </a>
               </p>
             </div>
           </div>
