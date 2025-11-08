@@ -241,7 +241,7 @@ export default function Footer() {
               </p>
               <p className="text-black text-sm text-center md:text-right">
                 <a
-                  href="https://emersonmelhorzin.vercel.app/"
+                  href="https://emerson-melhorzinn.vercel.app/"
                   className="text-black font-bold"
                 >
                   Emerson Silva
